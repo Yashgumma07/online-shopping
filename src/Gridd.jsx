@@ -7,7 +7,7 @@ import Cart from './Cart'
 function Gridd() {
   
   const [pairs,setPairs] = useState([
-    {id:1, name: 'white shirt',quantity:1, price:799, image:'/src/images/s1.jpeg'},
+    {id:1, name: 'white shirt',quantity:1, price:799, image:'/images/s1.jpeg'},
     {id:2, name: 'Black shirt',quantity:1, price:1299, image:'../src/images/s2.jpeg'},
     {id:3, name: 'grey checks',quantity:1, price:999, image:'../src/images/s3.jpeg'},
     {id:4, name: 'Blue shirt',quantity:1, price:1499, image:'../src/images/s4.jpeg'},
