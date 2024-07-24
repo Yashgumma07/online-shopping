@@ -16,6 +16,7 @@
     background-color: white;
     margin: -10px -10px 0px -10px;
     width: 100%;
+    z-index: 10;
 }
 
 .center ul {
@@ -72,8 +73,9 @@
     font-weight: bold;
     font-family: cursive;
     cursor: pointer;
+    border-style: none;
     margin: 25px 0px 40px 100px;
-    padding: 10px 10px 0px 10px;
+    padding: 10px 10px 10px 10px;
     border-radius: 30px;
     transition: background-color 0.3s;
     -webkit-transition: background-color 0.3s;
@@ -125,6 +127,8 @@
 .bag {
     height: 20px;
     width: 20px;
+    margin-left: 2px;
+    cursor: pointer;
 }
 
 .grid {
@@ -134,8 +138,8 @@
 }
 
 .heading {
-    margin: 10px;
-    font-size: 50px;
+    margin: 40px 50px;
+    font-size: 30px;
     font-weight: bold;
     font-family: cursive;
 }
@@ -238,9 +242,10 @@
 .cart {
     font-size: 25px;
     background-color: rgb(129, 213, 125);
-    margin: 5px 20px;
+    margin: 5px 28px;
     padding: 2px 10px;
     border-radius: 10px;
+    border-style: none;
 }
 
 .cart:hover {
@@ -257,6 +262,7 @@
     border-style: none;
     border-width: 5px;
     background-color: white;
+    margin-top: 10px;
 }
 
 .bottoms h1 {
@@ -311,4 +317,232 @@
     height: 80px;
     width: 200px;
     margin: 10px 20px 0px 0px;
+}
+
+.cartmain {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(166, 189, 242);
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 45px;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    -ms-border-radius: 45px;
+    -o-border-radius: 45px;
+}
+
+.carthead {
+    font-family: cursive;
+    margin: 10px 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.cartitems {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 10px;
+}
+
+.cartimage {
+    margin: 0px 0px;
+    height: 150px;
+    width: 127px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.cartbox {
+    height: 300px;
+    width: 130px;
+    background-color: rgb(248, 172, 172);
+    margin: 8px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.cartbox p {
+    font-family: cursive;
+    margin: 5px 15px;
+}
+
+.netv {
+    margin: 5px 10px;
+    font-weight: bold;
+}
+
+.netvalue {
+    font-family: cursive;
+    font-weight: bold;
+    background-color: yellow;
+    height: 20px;
+    width: 60px;
+    margin: 5px 25px;
+    padding: 0px 8px;
+}
+
+.emptycart {
+    margin: -50px 0px 0px 550px;
+    height: 366px;
+    width: 366px;
+}
+
+.login {
+    position: fixed;
+    inset: 0;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+}
+
+.loginform {
+    width: 280px;
+    height: 350px;
+    margin: 150px 600px;
+    background-color: rgb(166, 237, 149);
+    border-style: solid;
+    border-color: black;
+    padding: 0px 40px 10px 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.close {
+    height: 40px;
+    width: 40px;
+    border-style: none;
+    background: transparent;
+    margin: -60px 0px 0px 330px;
+}
+
+.loginform input {
+    height: 25px;
+    width: 250px;
+    margin: 10px 10px 20px 0px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.submitbutton {
+    height: 40px;
+    width: 100px;
+    margin: 10px 85px;
+    font-weight: bold;
+    background-color: rgb(21, 228, 21);
+    border-style: solid;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.billmain {
+    display: flex;
+    background-color: black;
+    padding-top: 10px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.billhead {
+    font-family: cursive;
+    padding: 60px 20px 0px 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.billvalue {
+    margin-left: 50px;
+}
+
+.line {
+    height: 50px;
+    width: 300px;
+    padding: 0px;
+}
+
+.totalbill {
+    font-size: 30px;
+    font-family: cursive;
+    font-weight: bold;
+    margin: 0px 0px 0px 100px;
+    color: white;
+    background-color: black;
+}
+
+.arrow img {
+    height: 100px;
+    width: 100px;
+    padding: 0px;
+    margin: 30px 0px 0px 60px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+.clearmain {
+    margin: 60px 200px;
+}
+
+.clearbutton {
+    height: 50px;
+    width: 150px;
+    color: white;
+    background-color: rgb(201, 28, 28);
+    font-weight: bold;
+    border-style: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.clearbutton:hover {
+    opacity: 0.6;
+}
+
+.floating {
+    position: absolute;
+    margin: -165px 0px 0px 100px;
+}
+
+.floating img {
+    height: 30px;
+    width: 25px;
+    border-radius: 20px;
+}
+
+.deletebutton {
+    background-color: white;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }

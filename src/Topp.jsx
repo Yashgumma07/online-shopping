@@ -1,7 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useState,useEffect } from 'react';
 import { Link} from 'react-scroll';
+import Login from './Login';
 
 function Topp() {
+  const [loginpage,setLoginpage] = useState(false)
   return (
     <div className='toopp'>
       <div className='logo'>
@@ -19,16 +21,17 @@ function Topp() {
       <div>
         <input className='search' type="text" placeholder='Search' />
       </div>
-      <div className='sign'>
-        SignUp/LogIn
+      <div ><button className='sign' onClick={()=>setLoginpage(true)}>SignUp/LogIn</button>
+        
+        {loginpage&&<Login onClose={()=>setLoginpage(false)} />}
       </div>
       <div className='wisher'>
         <div><img className='wish' src="../src/images/wish.png" alt="" /></div>
         <div className='wishlist'>Wishlist</div>
       </div>
       <div className='wisher'>
-        <div><img className='bag' src="../src/images/bag.png" alt="" /></div>
-        <div className='wishlist'>Bag</div>
+        <div><Link to='cart' smooth={true} duration={1000}><img className='bag' src="../src/images/bag.png" alt="" /></Link></div>
+        <div className='wishlist'><Link to='cart' smooth={true} duration={1000}>Cart</Link></div>
       </div>
       
       

@@ -5,6 +5,8 @@ import './App.css'
 import Topp from './Topp'
 import Gridd from './Gridd'
 import Bottom from './Bottom'
+import Cart from './Cart'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,13 +17,13 @@ function App() {
         <div id='home'>
           <Topp />
         </div>
+        
         <div className='banners'>
-          <img src="../src/assets/banner.png" alt='banner' />
+          <img src="../src/images/banner.png" alt='banner' />
         </div>
         <div>
           <Gridd />
         </div>
-        
         <div>
           <Bottom />
         </div>
